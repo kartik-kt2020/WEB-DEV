@@ -6,19 +6,21 @@
     <title>Document</title>
     <style>
         body {
-            margin: 0;
-            height: 100vh;
-            background: linear-gradient(135deg, GREEN , BLUE);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-family: Arial, sans-serif;
-            color: white;
-        }
+  margin: 0;
+  height: 50vh;
+  background: linear-gradient(135deg, green, blue);
+  display: flex;
+  flex-direction: column;   /* Important */
+  justify-content: space-between;  /* Pushes top & bottom */
+  align-items: center;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+
 
         .clock-container {
             text-align: center;
-            background: YELLOW (205, 15, 15, 0.4);
+            background: rgba(205, 15, 15, 0.4);
             padding: 30px 50px;
             border-radius: 10px;
         }
@@ -36,7 +38,7 @@
 </head>
 <body>
     <H1>THIS CLOCK IS MADE USING JAVASCRIPT</H1>
-    <H3><div class="clock-container">
+    <div class="clock-container">
         <h1 id="time">00:00:00 AM</h1>
         <p id="date">Loading date...</p>
     </div>
@@ -69,6 +71,10 @@
 
         updateClock();
         setInterval(updateClock, 1000);
-    </script></H3>
+    </script>
+    <br>
+    <marquee direction="right" scrollamount="10" behavior="alternate">
+  Kartik is learning Web Dev 🚀
+</marquee>
 </body>
 </html>
