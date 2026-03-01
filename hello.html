@@ -5,35 +5,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
+        /* ===== GLOBAL RESET ===== */
+* {
   margin: 0;
-  height: 50vh;
-  background: linear-gradient(135deg, green, blue);
-  display: flex;
-  flex-direction: column;   /* Important */
-  justify-content: space-between;  /* Pushes top & bottom */
-  align-items: center;
-  font-family: Arial, sans-serif;
-  color: white;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+/* ===== BODY STYLING ===== */
+body {
+  height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
 
-        .clock-container {
-            text-align: center;
-            background: rgba(205, 15, 15, 0.4);
-            padding: 30px 50px;
-            border-radius: 10px;
-        }
+/* ===== TOP HEADING ===== */
+h1 {
+  margin-top: 40px;
+  letter-spacing: 2px;
+  font-size: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  opacity: 0.9;
+}
 
-        #time {
-            font-size: 50px;
-            margin: 0;
-        }
+/* ===== CLOCK CONTAINER ===== */
+.clock-container {
+  background: rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(15px);
+  padding: 50px 70px;
+  border-radius: 20px;
+  box-shadow: 
+    0 10px 40px rgba(0, 0, 0, 0.4),
+    inset 0 0 20px rgba(255, 255, 255, 0.05);
+  text-align: center;
+  transition: all 0.4s ease;
+}
 
-        #date {
-            font-size: 20px;
-            margin-top: 10px;
-        }
+/* Hover Glow Effect */
+.clock-container:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 
+    0 15px 50px rgba(0, 0, 0, 0.6),
+    0 0 25px rgba(0, 255, 255, 0.6);
+}
+
+/* ===== TIME TEXT ===== */
+#time {
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 3px;
+  margin-bottom: 15px;
+  text-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+}
+
+/* ===== DATE TEXT ===== */
+#date {
+  font-size: 18px;
+  opacity: 0.8;
+}
+
+/* ===== MARQUEE STYLING ===== */
+marquee {
+  width: 100%;
+  padding: 15px 0;
+  background: rgba(0, 0, 0, 0.3);
+  font-size: 18px;
+  letter-spacing: 1px;
+  backdrop-filter: blur(10px);
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  #time {
+    font-size: 40px;
+  }
+
+  .clock-container {
+    padding: 30px 40px;
+  }
+
+  h1 {
+    font-size: 20px;
+  }
+}
     </style>
 </head>
 <body>
@@ -75,6 +138,9 @@
     <br>
     <marquee direction="right" scrollamount="10" behavior="alternate">
   Kartik is learning Web Dev 🚀
+</marquee>
+<marquee direction="right" scrollamount="1000" behavior="alternate" fontcolor="red">
+*************
 </marquee>
 </body>
 </html>
