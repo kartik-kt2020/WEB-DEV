@@ -1,9 +1,21 @@
 #box{
     background-color: blue;
 }
-.heading{
+.heading1{
     color: red;
     text-align: center;
+    font-weight: 900;
+}
+.heading2{
+    color: aqua;
+    text-align: right;
+    font-weight: 600;
+}
+.heading3{
+    color: burlywood;
+    text-align: left;
+    font-weight: 300;
+    font-family: Arial;
 }
 button{
     color: green;
