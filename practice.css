@@ -15,11 +15,40 @@
     color: burlywood;
     text-align: left;
     font-weight: 300;
-    font-family: Arial;
+    font-family: Arials;
 }
 button{
     color: green;
 }
 p{
     text-align: center;
+}
+#one{
+    font-family: arial;
+}
+#two{
+    font-family: 'Courier New', Courier, monospace;
+}
+#px{
+    font-size: 10px;
+}
+#line{
+    line-height: 40px;
+    text-transform: capitalize;
+}
+#set2{
+    text-transform: capitalize;
+    text-align: center;
+}
+#font{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: start;
+}
+#outer{
+    font-size: 25px;
+    color: red;
+}
+#inner{
+    font-size: 10px;
+    color: blue;
 }
