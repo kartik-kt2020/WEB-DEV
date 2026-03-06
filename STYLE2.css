@@ -6,6 +6,7 @@
     border-style: solid;
     border-color: cadetblue;
     border-radius: 10px;
+    display: inline;
 }
 p{
     border: 2px double red;
@@ -22,6 +23,7 @@ p{
     border-style: groove;
     border-color: chocolate;
     border-radius: 10px;
+    display: inline;
 }
 #q1{
     height: 100px;
@@ -51,4 +53,8 @@ a{
     margin-right: 200px;
     color: white;
     text-decoration: none;
+}
+#navi{
+    color: rebeccapurple;
+    background-color: aquamarine;
 }
