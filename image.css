@@ -1,0 +1,31 @@
+div{
+    height: 200px;
+    width: 100px;
+    border: 3px solid red;
+    display: inline-block;
+    background-color: aqua;
+}
+#img1{
+    background-image: url(Batman\ spiderman.jpeg);
+    background-size: cover;
+}
+div{
+    height: 200px;
+    width: 100px;
+    border: 3px solid red;
+    display: inline-block;
+    background-color: aqua;
+}
+#img2{
+    position: fixed;
+    top: 0%;
+    right: 0%;
+    z-index: 20;
+    background-image: url(moon1.jpg);
+    background-size: cover;
+    width: 200px;
+}
+body{
+    background-image: url(river1.jpg);
+    background-size: cover;
+}
