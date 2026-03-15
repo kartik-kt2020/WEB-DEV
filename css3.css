@@ -1,7 +1,7 @@
 #q2{
     background-color: black;
     color: white;
-    text-decoration: none;
+    text-decoration:double;
     margin-right: 200px;
     height: 60px;
     width: 1500px;
@@ -31,4 +31,28 @@ a{
     background-color: black;
     text-align: center;
     color: white;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+#text{
+    margin: 50px;
+    font-size: 20px;
+    position: absolute;
+    top: 150px;
+    left: 5px;
+}
+#fixed{
+      height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+    border-style: double;
+    padding: 10px 10px 10px 10px;
+    border: 5px solid black;
+}
+header{
+    position: sticky;
+    top: 0;
+    z-index: 10;
 }
